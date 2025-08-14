@@ -28,7 +28,7 @@ Simple autostart and checking for Chia farming in Windows / Python script.
 
 2. **Clone the Repository**
    ```sh
-   git clone https://github.com/alewir/chia_monitor.git
+   git clone https://github.com/alewir/chia_monitor.git C:\chia_monitor
    cd chia_monitor
 
 ### Configure Credentials
@@ -43,16 +43,16 @@ Simple autostart and checking for Chia farming in Windows / Python script.
 
 ### Edit Configuration
 Modify chia_monitor_config.json for paths, expected plots, directories, and other parameters.
-Example:
+Example (assuming repo cloned and Chia GUI - https://www.chia.net/downloads/ - installed on drive C):
 
 ```json
 {
-  "chia_path": "c:\\Chia\\resources\\app.asar.unpacked\\daemon\\chia.exe",
-  "chia_gui_path": "c:\\Chia\\chia.exe",
+  "chia_path": "c:\\<path_to_chia_gui_installation>\\resources\\app.asar.unpacked\\daemon\\chia.exe",
+  "chia_gui_path": "c:\\<path_to_chia_gui_installation>\\chia.exe",
   "keyring_service_name": "chia_wallet_password",
   "keyring_username": "chia_farmer",
   "network_share_service_name": "chia_network_shares",
-  "log_file_path": "C:\\harvest_script_log.log",
+  "log_file_path": "C:\\chia_monitor\\harvest.log",
   "max_log_bytes": 1048576,
   "backup_count": 5,
   "summary_check_interval_seconds": 30,
@@ -78,7 +78,7 @@ Start the Monitor:
   - Triggers: ```"At log on" - "At log on of any user```
   - Actions: ```Start a program```
     - Program script: ```C:\Windows\System32\cmd.exe``` 
-    - Add arguments (...):```/c "c:\Python313\python.exe D:\harvest-s.py"```
+    - Add arguments (...):```/c "c:\<path_to_python_installation>\python.exe C:\chia_monitor\harvest.py"```
  - Conitions: ```"Start only if the following network connection is available" - "Any connection"```
 
 - WSL/2 (Ubuntu)
