@@ -4,7 +4,7 @@ Simple autostart and checking for Chia farming in Windows / Python script.
 
 ## Overview
 
-**Chia Monitor** is a Python tool designed to automate and monitor Chia farming on Windows. It provides real-time status via a graphical interface and manages farm services, credentials, and network drives for both local and remote plot directories.
+**Chia Monitor** is a Python tool designed to automate and monitor Chia farming on Windows. It provides real-time status via a graphical interface and manages farm services, credentials, and network drives for both local and remote plot directories (initializes remote/UNC drive access on startup).
 
 ---
 
