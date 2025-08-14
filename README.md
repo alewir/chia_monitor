@@ -45,7 +45,7 @@ Simple autostart and checking for Chia farming in Windows / Python script.
 Modify chia_monitor_config.json for paths, expected plots, directories, and other parameters.
 Example:
 
-```
+```json
 {
   "chia_path": "c:\\Chia\\resources\\app.asar.unpacked\\daemon\\chia.exe",
   "chia_gui_path": "c:\\Chia\\chia.exe",
@@ -72,9 +72,17 @@ Example:
 ---
 
 ## Usage
-Start the Monitor
+Start the Monitor:
+- Windows Scheduler
+  - General: ```"Run only when user is logged in."```
+  - Triggers: ```"At log on" - "At log on of any user```
+  - Actions: ```Start a program```
+    - Program script: ```C:\Windows\System32\cmd.exe``` 
+    - Add arguments (...):```/c "c:\Python313\python.exe D:\harvest-s.py"```
+ - Conitions: ```"Start only if the following network connection is available" - "Any connection"```
 
-```
+- WSL/2 (Ubuntu)
+```bash
 sh
 python harvest.py
 ```
