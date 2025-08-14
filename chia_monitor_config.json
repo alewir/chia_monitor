@@ -1,0 +1,24 @@
+{
+    "chia_path": "c:\\Chia\\resources\\app.asar.unpacked\\daemon\\chia.exe",
+    "chia_gui_path": "c:\\Chia\\chia.exe",
+    "keyring_service_name": "chia_wallet_password",
+    "keyring_username": "chia_farmer",
+    "network_share_service_name": "chia_network_shares",
+    "log_file_path": "C:\\harvest_script_log.log",
+    "max_log_bytes": 1048576,
+    "backup_count": 5,
+    "summary_check_interval_seconds": 30,
+    "network_drive_retry_attempts": 3,
+    "network_drive_retry_delay_seconds": 10,
+    "plot_filename_pattern_str": "plot-k32-\\d{4}-\\d{2}-\\d{2}-\\d{2}-\\d{2}-.{64}\\.plot",
+    "plot_directories": [
+        "D:\\\\",
+        "E:\\\\",
+        "F:\\\\",
+...
+        "M:\\\\NAS-SYS02\\ChiaFarmNFS02\\\\",
+        "N:\\\\NAS-SYS01\\ChiaFarmNFS01\\\\",
+...
+    ],
+    "expected_plots": 123
+}
