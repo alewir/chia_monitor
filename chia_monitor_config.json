@@ -4,7 +4,7 @@
     "keyring_service_name": "chia_wallet_password",
     "keyring_username": "chia_farmer",
     "network_share_service_name": "chia_network_shares",
-    "log_file_path": "C:\\harvest_script_log.log",
+    "log_file_path": "C:\\harvest_script.log",
     "max_log_bytes": 1048576,
     "backup_count": 5,
     "summary_check_interval_seconds": 30,
